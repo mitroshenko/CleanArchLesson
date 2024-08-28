@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cleanarch.presentation.presentation.MainActivity">
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/receiveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Get user data"
+        app:layout_constraintEnd_toEndOf="@+id/dataTextView"
+        app:layout_constraintStart_toStartOf="@+id/dataTextView"
+        app:layout_constraintTop_toBottomOf="@+id/dataTextView" />
+
+    <EditText
+        android:id="@+id/dataEditView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/receiveButton"
+        app:layout_constraintStart_toStartOf="@+id/receiveButton"
+        app:layout_constraintTop_toBottomOf="@+id/receiveButton" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Save user name"
+        app:layout_constraintEnd_toEndOf="@+id/dataEditView"
+        app:layout_constraintStart_toStartOf="@+id/dataEditView"
+        app:layout_constraintTop_toBottomOf="@+id/dataEditView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
